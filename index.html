@@ -1,49 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neurotrace</title>
-    <style>
-      body {
-        font-family: sans-serif;
-        font-size: 14pt;
-        background: #181a18;
-        color: #fff;
-      }
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.fosstodon.org/accounts/avatars/110/518/610/907/226/358/original/8a4e3ca4dc655b7a.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      a {
-        text-decoration: none;
-        color: #adf;
-      }
-      a:visited {
-        color: #90c0e0;
-      }
-
-      main {
-        margin: 0 auto;
-        max-width: 70vw;
-      }
-      @media only screen and (max-width: 600px) {
-        main {
-          max-width: 95vw;
-        }
-      }
-    </style>
+    <!-- Dumb hack to avoid FOUC in Firefox -->
+    <script>
+      /**/
+    </script>
   </head>
   <body>
-    <main>
-      Find me at
-      <a rel="me" href="https://fosstodon.org/@Neurotrace">
-        @Neurotrace@fosstodon.org
-      </a>
+    <nav>
+      <div class="left">
+        <a href="/" class="active nav-item">
+          <img
+            src="https://cdn.fosstodon.org/accounts/avatars/110/518/610/907/226/358/original/8a4e3ca4dc655b7a.png"
+            height="32"
+          />
+        </a>
+      </div>
+    </nav>
 
-      <ul>
-        <li>
-          <a href="boids">Boids Demo</a>
-        </li>
-      </ul>
+    <main>
+      <section>
+        <h2 class="neurotrace">Neurotrace</h2>
+      </section>
+
+      <section>
+        Come hang out with me on Mastodon:
+        <a rel="me" href="https://fosstodon.org/@Neurotrace">
+          @Neurotrace@fosstodon.org
+        </a>
+      </section>
+
+      <section>
+        <h2>News</h2>
+
+        <ul>
+          <li>
+            <a href="boids">I wrote a boids simulator</a>
+          </li>
+        </ul>
+      </section>
     </main>
   </body>
 </html>

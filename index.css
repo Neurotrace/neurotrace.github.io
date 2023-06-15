@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Iceland&family=Libre+Barcode+39+Text&display=swap");
+@font-face {
+  font-family: "Iceland";
+  src: url("fonts/Iceland-Regular.ttf");
+}
+@font-face {
+  font-family: "Libre Barcode 39 Text";
+  src: url("fonts/LibreBarcode39Text-Regular.ttf");
+}
+@font-face {
+  font-family: "Neo Tech";
+  src: url("fonts/Neo\ Tech.otf");
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Iceland", sans-serif;
+  font-size: 18pt;
+}
+
+body {
+  background-color: #1b2023;
+  color: #ccc;
+}
+
+pre,
+code {
+  font-family: "JetBrains Mono", "Cascadia Code", "Fira Code", monospace;
+  font-size: 80%;
+  background-color: #444;
+  padding: 0 0.25em;
+}
+
+.neurotrace {
+  text-align: center;
+  font-size: 60pt;
+  font-family: "Libre Barcode 39 Text", sans-serif;
+}
+@media (max-width: 800px) {
+  .neurotrace {
+    font-size: 50pt;
+  }
+}
+
+nav {
+  position: relative;
+  font-family: "Neo Tech";
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2em;
+  padding-left: 2em;
+  margin: 0;
+  width: 100%;
+  background-image: linear-gradient(to right, #2b3033, #1b2023);
+  border-bottom: solid 1px #fcda52;
+  box-sizing: border-box;
+}
+
+nav img {
+  border-radius: 100%;
+}
+
+@media (max-width: 800px) {
+  nav {
+    font-size: 75%;
+    padding-left: 0.5em;
+  }
+}
+
+main {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 980px;
+}
+
+a {
+  color: #fcda52;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+}
+
+ul {
+  margin-top: 0;
+}
