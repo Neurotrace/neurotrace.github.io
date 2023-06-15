@@ -8,22 +8,42 @@
     <style>
       body {
         font-family: sans-serif;
-        background: #000;
+        font-size: 14pt;
+        background: #181a18;
         color: #fff;
       }
 
       a {
         text-decoration: none;
-        color: #dfd;
+        color: #adf;
       }
       a:visited {
-        color: #ddf;
+        color: #90c0e0;
+      }
+
+      main {
+        margin: 0 auto;
+        max-width: 70vw;
+      }
+      @media only screen and (max-width: 600px) {
+        main {
+          max-width: 95vw;
+        }
       }
     </style>
   </head>
   <body>
-    <a rel="me" href="https://fosstodon.org/@Neurotrace">
-      @Neurotrace@fosstodon.org
-    </a>
+    <main>
+      Find me at
+      <a rel="me" href="https://fosstodon.org/@Neurotrace">
+        @Neurotrace@fosstodon.org
+      </a>
+
+      <ul>
+        <li>
+          <a href="boids">Boids Demo</a>
+        </li>
+      </ul>
+    </main>
   </body>
 </html>
